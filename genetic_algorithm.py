@@ -53,7 +53,7 @@ class Network:
 
     def __init__(self, num_layers: int, layer_sizes: list[int], app):
         if len(layer_sizes) != num_layers or num_layers < 3:
-            self.fuck_you()
+            self.die()
 
         self.num_layers = num_layers
         self.layer_sizes = layer_sizes
@@ -111,8 +111,8 @@ class Network:
         output = np.dot(self.output_weights, layer)
         return output
 
-    def fuck_you(self):
-        print('fuck you give me proper inputs')
+    def die(self):
+        print('give me proper inputs *skullemoji*')
         quit()
 
 
